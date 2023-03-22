@@ -9,13 +9,6 @@ class Contestant:
     def __repr__(self):
         return f'{self.name}: {self.age}'
 
-class Match:
-    def __init__(self, contestant1, contestant2):
-        self.contestant1 = contestant1
-        self.contestant2 = contestant2
-        self.match = set((contestant1, contestant2))
-
-
 class Simulation:
     def __init__(self, num_of_contestants=16):
         self.num_of_contestants = num_of_contestants
